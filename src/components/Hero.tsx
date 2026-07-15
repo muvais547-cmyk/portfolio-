@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { Heart, Bookmark, ArrowUpRight, Check, Send } from "lucide-react";
+import { Heart, Bookmark, ArrowUpRight, Check, Send, Mail } from "lucide-react";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -91,9 +91,46 @@ export default function Hero() {
         >
           {/* Card Top Row */}
           <div className={styles.cardTopRow}>
-            <div className={styles.menuIconCircle}>
-              <span className={styles.menuLine} />
-              <span className={styles.menuLine} />
+            <div className={styles.badgeList}>
+              {/* Contact Badge */}
+              <button 
+                className={styles.badgePill}
+                onClick={() => setShowContactModal(true)}
+                title="Send an email"
+              >
+                <Mail size={13} />
+                <span>Contact</span>
+              </button>
+
+              {/* Instagram Badge */}
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.badgePill}
+                title="Visit Instagram Profile"
+              >
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>Instagram</span>
+              </a>
+
+              {/* WhatsApp Badge */}
+              <a 
+                href="https://wa.me/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.badgePill}
+                title="Chat on WhatsApp"
+              >
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                  <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.118-2.91-6.997-1.88-1.879-4.361-2.912-7.001-2.913-5.442 0-9.866 4.42-9.87 9.865-.001 1.745.456 3.453 1.32 4.964l-.995 3.634 3.731-.977zm11.368-6.44c-.29-.145-1.71-.845-1.975-.94-.266-.096-.46-.145-.653.145-.193.29-.748.94-.917 1.133-.169.193-.338.217-.627.072-1.29-.646-2.18-1.127-2.97-2.484-.21-.362.21-.336.6-.112.35.201.39.264.47.424.08.16.04.305-.02.45-.06.145-.653 1.573-.895 2.152-.236.57-.475.49-.652.482-.17-.008-.362-.01-.554-.01s-.507.072-.773.362c-.266.29-1.013.99-1.013 2.415 0 1.424 1.037 2.803 1.182 2.996.145.193 2.04 3.115 4.94 4.373.69.3 1.23.478 1.65.612.693.22 1.324.19 1.823.115.556-.083 1.71-.698 1.952-1.37.242-.674.242-1.253.17-1.37-.072-.119-.266-.193-.556-.338z"/>
+                </svg>
+                <span>WhatsApp</span>
+              </a>
             </div>
             <span className={styles.copyrightText}>©2026</span>
           </div>
