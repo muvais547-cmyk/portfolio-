@@ -1,0 +1,187 @@
+.aboutSection {
+  position: relative;
+  width: 100%;
+  padding: 100px 20px;
+  background-color: var(--bg-cream);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 820px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-top: 6px;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+
+.divider {
+  width: 30px;
+  height: 2px;
+  background-color: var(--olive-green);
+}
+
+.bioWrapper {
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bioText {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.bioText strong {
+  font-weight: 600;
+  color: var(--olive-dark);
+}
+
+.statsGrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 65px;
+}
+
+.statCard {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+}
+
+.statNumber {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--olive-green);
+  line-height: 1.1;
+  margin-bottom: 6px;
+  letter-spacing: -0.03em;
+}
+
+.statLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.skillsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 50px;
+}
+
+.skillsTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-dark);
+  letter-spacing: 0.12em;
+  margin-bottom: 20px;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  max-width: 700px;
+}
+
+.skillTag {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  color: var(--text-dark);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .bioText {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutSection {
+    padding: 70px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .statCard {
+    padding: 16px 10px;
+  }
+  .statNumber {
+    font-size: 1.8rem;
+  }
+  .statLabel {
+    font-size: 0.6rem;
+  }
+  .skillTag {
+    padding: 5px 10px;
+    font-size: 0.72rem;
+  }
+}
