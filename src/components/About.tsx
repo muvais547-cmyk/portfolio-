@@ -15,6 +15,7 @@ const stats = [
 const skills = [
   "AI Video Creation",
   "AI Content Creation",
+  "Videography",
   "Prompt Engineering",
   "Content Strategy",
   "Social Media Marketing",
@@ -67,7 +68,7 @@ export default function About() {
           <div className={styles.bioWrapper}>
             <p className={styles.bioText}>
               I'm <strong>Muhammed Uvais A</strong>, an AI Content Creator specializing in
-              cinematic AI videos, luxury advertisements, social media content, and prompt engineering.
+              cinematic AI videos, luxury advertisements, videography, social media content, and prompt engineering.
             </p>
             <p className={styles.bioTextMuted}>
               I bridge the gap between creative storytelling and generative AI, crafting visual narratives that elevate brand identities.
