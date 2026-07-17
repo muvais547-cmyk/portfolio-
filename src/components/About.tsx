@@ -6,10 +6,10 @@ import AnimatedCounter from "./AnimatedCounter";
 import styles from "./About.module.css";
 
 const stats = [
-  { value: 50, suffix: "+", label: "Projects Completed" },
-  { value: 29, suffix: "+", label: "Videos Created" },
-  { value: 19, suffix: "+", label: "Happy Clients" },
-  { value: 1, suffix: "+", label: "Years Learning AI" },
+  { id: "[01]", value: 50, suffix: "+", label: "Projects Completed" },
+  { id: "[02]", value: 29, suffix: "+", label: "Videos Created" },
+  { id: "[03]", value: 19, suffix: "+", label: "Happy Clients" },
+  { id: "[04]", value: 1, suffix: "+", label: "Years Learning AI" },
 ];
 
 const skills = [
@@ -50,51 +50,71 @@ export default function About() {
 
   return (
     <section id="about" className={styles.aboutSection}>
+      {/* Split Background to continue the Hero theme */}
+      <div className={styles.splitBg}>
+        <div className={styles.bgLeft} />
+        <div className={styles.bgRight} />
+      </div>
+
       <div className={styles.container}>
-        {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6 }}
-          className={styles.header}
-        >
-          <span className={styles.subtitle}>WHO I AM</span>
-          <h2 className={styles.title}>About Me</h2>
-          <div className={styles.divider} />
-        </motion.div>
+        {/* Left Column: Bio & Skills Badge cloud */}
+        <div className={styles.leftCol}>
+          <div className={styles.header}>
+            <span className={styles.subtitle}>01 / BIOGRAPHY</span>
+            <h2 className={styles.title}>About Me</h2>
+          </div>
+          
+          <div className={styles.bioWrapper}>
+            <p className={styles.bioText}>
+              I'm <strong>Muhammed Uvais A</strong>, an AI Content Creator specializing in
+              cinematic AI videos, luxury advertisements, social media content, and prompt engineering.
+            </p>
+            <p className={styles.bioTextMuted}>
+              I bridge the gap between creative storytelling and generative AI, crafting visual narratives that elevate brand identities.
+            </p>
+          </div>
 
-        {/* Bio Paragraph */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.7, delay: 0.1 }}
-          className={styles.bioWrapper}
-        >
-          <p className={styles.bioText}>
-            I'm <strong>Muhammed Uvais A</strong>, an AI Content Creator specializing in
-            cinematic AI videos, luxury advertisements, social media content, and prompt engineering.
-            I bridge the gap between advanced artificial intelligence and high-end creative storytelling,
-            crafting visuals that captivate and drive engagement.
-          </p>
-        </motion.div>
+          <div className={styles.skillsWrapper}>
+            <h3 className={styles.skillsTitle}>Skills Summary</h3>
+            <div className={styles.skillsGrid}>
+              {skills.map((skill, idx) => (
+                <motion.span
+                  key={idx}
+                  whileHover={{ 
+                    scale: 1.05, 
+                    backgroundColor: "var(--olive-green)", 
+                    color: "var(--bg-cream)", 
+                    borderColor: "var(--olive-green)" 
+                  }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  className={styles.skillTag}
+                >
+                  {skill}
+                </motion.span>
+              ))}
+            </div>
+          </div>
+        </div>
 
-        {/* Stat Cards Grid */}
+        {/* Right Column: Stat Cards Grid */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className={styles.statsGrid}
+          className={styles.rightCol}
         >
           {stats.map((stat, idx) => (
             <motion.div
               key={idx}
               variants={itemVariants}
-              whileHover={{ y: -6, boxShadow: "0 12px 30px rgba(90, 103, 83, 0.15)" }}
+              whileHover={{ y: -5, boxShadow: "0 15px 30px rgba(0, 0, 0, 0.15)" }}
               className={styles.statCard}
             >
+              <div className={styles.cardHeader}>
+                <span className={styles.cardId}>{stat.id}</span>
+                <span className={styles.cardDot} />
+              </div>
               <div className={styles.statNumber}>
                 <AnimatedCounter value={stat.value} suffix={stat.suffix} />
               </div>
@@ -102,36 +122,6 @@ export default function About() {
             </motion.div>
           ))}
         </motion.div>
-
-        {/* Skills Summary Tag Grid */}
-        <div className={styles.skillsWrapper}>
-          <motion.h3
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 0.7 }}
-            viewport={{ once: true }}
-            className={styles.skillsTitle}
-          >
-            Skills Summary
-          </motion.h3>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className={styles.skillsGrid}
-          >
-            {skills.map((skill, idx) => (
-              <motion.span
-                key={idx}
-                whileHover={{ scale: 1.05, backgroundColor: "var(--olive-green)", color: "var(--bg-cream)", borderColor: "var(--olive-green)" }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                className={styles.skillTag}
-              >
-                {skill}
-              </motion.span>
-            ))}
-          </motion.div>
-        </div>
       </div>
     </section>
   );
