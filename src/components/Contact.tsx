@@ -45,7 +45,7 @@ export default function Contact() {
 
           <div className={styles.contactMethods}>
             {/* Email link */}
-            <a href="mailto:muhammeduvais@gmail.com" className={styles.contactCard}>
+            <a href="mailto:muvais547@gmail.com" className={styles.contactCard}>
               <div className={styles.cardHeader}>
                 <div className={styles.iconCircle}>
                   <Mail size={20} />
@@ -54,7 +54,7 @@ export default function Contact() {
               </div>
               <div className={styles.cardBody}>
                 <span className={styles.methodLabel}>Email Direct</span>
-                <h3 className={styles.methodValue}>muhammeduvais@gmail.com</h3>
+                <h3 className={styles.methodValue}>muvais547@gmail.com</h3>
               </div>
             </a>
 
