@@ -1,12 +1,19 @@
 :root {
   --bg-cream: #FAF9F6;
   --bg-linen: #EBEAE5;
+  --bg-card: #E4EAE2;        /* Modern desaturated Moss/Sage Gray */
   --olive-green: #5A6753;
   --olive-dark: #475241;
   --text-dark: #1C1E1B;
   --text-muted: #6B7567;
   --border-color: rgba(90, 103, 83, 0.2);
   --border-dark: rgba(90, 103, 83, 0.4);
+  --border-card: rgba(90, 103, 83, 0.12);
+  
+  /* AI accents */
+  --accent-glow: #2E7D52;    /* Vibrant tech mint green */
+  --accent-gold: #C5A03A;    /* Cyber gold */
+  --glow-color: rgba(46, 125, 82, 0.08);
 }
 
 * {

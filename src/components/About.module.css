@@ -143,8 +143,8 @@
 }
 
 .statCard {
-  background-color: var(--bg-cream);
-  border: 1px solid var(--border-color);
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-card);
   border-radius: 12px;
   padding: 24px 20px;
   display: flex;
