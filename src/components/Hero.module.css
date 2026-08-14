@@ -219,11 +219,11 @@
 }
 
 .badgePill:hover {
-  background-color: var(--accent-glow);
-  border-color: var(--accent-glow);
-  color: #ffffff;
+  background-color: var(--olive-green);
+  border-color: var(--olive-green);
+  color: var(--bg-cream);
   transform: translateY(-1.5px);
-  box-shadow: 0 4px 10px rgba(46, 125, 82, 0.15);
+  box-shadow: 0 4px 10px rgba(90, 103, 83, 0.2);
 }
 
 .badgePill:hover svg {
@@ -278,7 +278,7 @@
   font-family: var(--font-syne), sans-serif;
   font-size: 16vw; /* Fluid font sizing */
   font-weight: 800;
-  color: var(--accent-glow);
+  color: var(--olive-green);
   text-transform: uppercase;
   text-align: center;
   line-height: 0.75;
@@ -287,7 +287,6 @@
   letter-spacing: -0.04em;
   z-index: 1; /* Sits behind image */
   pointer-events: none;
-  text-shadow: 0 0 40px rgba(159, 232, 141, 0.08);
 }
 
 @media (min-width: 820px) {
@@ -454,8 +453,6 @@
   padding: 15px 20px;
   border-radius: 50px;
   border: 1px solid var(--border-color);
-  background-color: rgba(0, 0, 0, 0.02);
-  color: var(--text-dark);
   font-size: 1rem;
   margin-bottom: 20px;
   outline: none;
@@ -464,12 +461,12 @@
 }
 
 .emailInput:focus {
-  border-color: var(--accent-glow);
+  border-color: var(--olive-green);
 }
 
 .submitBtn {
   width: 100%;
-  background-color: var(--accent-glow);
+  background-color: var(--olive-green);
   color: #ffffff;
   padding: 15px 30px;
   border-radius: 50px;
@@ -484,7 +481,6 @@
 
 .submitBtn:hover {
   background-color: var(--olive-dark);
-  color: #ffffff;
 }
 
 .successState {

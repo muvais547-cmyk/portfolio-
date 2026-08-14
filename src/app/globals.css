@@ -1,17 +1,12 @@
 :root {
-  --bg-cream: #FFFFFF;       /* Pure white card cover */
-  --bg-linen: #FAF9F6;       /* Light off-white linen background */
-  --olive-green: #B2C3B0;    /* Lighter editorial sage green */
-  --olive-dark: #3F4F3D;     /* Text-contrast sage green */
-  --text-dark: #19201A;      /* Dark slate text */
-  --text-muted: #627265;     /* Muted sage */
-  --border-color: rgba(25, 32, 26, 0.1);
-  --border-dark: rgba(25, 32, 26, 0.2);
-  
-  /* AI Glow accents for light theme */
-  --accent-glow: #2E7D52;    /* Vibrant tech mint green */
-  --accent-gold: #C5A03A;    /* Cyber gold */
-  --glow-color: rgba(46, 125, 82, 0.08);
+  --bg-cream: #FAF9F6;
+  --bg-linen: #EBEAE5;
+  --olive-green: #5A6753;
+  --olive-dark: #475241;
+  --text-dark: #1C1E1B;
+  --text-muted: #6B7567;
+  --border-color: rgba(90, 103, 83, 0.2);
+  --border-dark: rgba(90, 103, 83, 0.4);
 }
 
 * {
@@ -48,12 +43,12 @@ button {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-linen);
+  background: var(--bg-cream);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--olive-green);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-glow);
+  background: var(--olive-dark);
 }

@@ -147,7 +147,7 @@
 .cardMeta {
   font-size: 0.62rem;
   font-weight: 700;
-  color: var(--accent-glow);
+  color: var(--olive-green);
   font-family: monospace;
   letter-spacing: 0.02em;
 }
@@ -159,7 +159,7 @@
 }
 
 .iconWrapper {
-  color: var(--accent-glow);
+  color: var(--olive-green);
   margin-bottom: 4px;
 }
 
