@@ -1,27 +1,26 @@
 :root {
-  --bg-cream: #120524;        /* Deep midnight violet */
-  --bg-linen: #0d031c;        /* Pitch black indigo */
-  --bg-card: rgba(35, 12, 60, 0.45);   /* Frosted translucent deep violet card background */
-  --border-card: rgba(255, 102, 196, 0.15); /* Neon pink tinted card border */
+  --bg-cream: #FAF9F6;
+  --bg-linen: #EBEAE5;
+  --bg-card: #FFFFFF;        /* Warm card white cover */
+  --border-card: rgba(90, 103, 83, 0.12);
   
-  --olive-green: #3b145a;     /* Replaced olive green with a rich deep purple */
-  --olive-dark: #23083b;      /* Replaced olive dark with dark plum */
+  --olive-green: #5A6753;     /* Original warm olive green */
+  --olive-dark: #475241;      /* Original warm olive dark */
   
-  --text-dark: #FFFFFF;       /* Heading white */
-  --text-muted: #D5CADF;      /* Muted lavender silver */
-  --border-color: rgba(255, 102, 196, 0.12);
-  --border-dark: rgba(255, 102, 196, 0.25);
+  --text-dark: #1C1E1B;       /* Dark slate text */
+  --text-muted: #6B7567;      /* Muted sage */
+  --border-color: rgba(90, 103, 83, 0.2);
+  --border-dark: rgba(90, 103, 83, 0.4);
 
-  /* Modern AI Model card variables */
-  --text-card-title: #FFFFFF;
-  --text-card-desc: #CBB9D8;
-  --accent-card: #FF66C4;     /* Neon Pink accent */
-  --accent-cyan: #00F2FE;     /* Neon Cyan accent */
+  /* Modern card text variables */
+  --text-card-title: #1C1E1B;
+  --text-card-desc: #6B7567;
+  --accent-card: #5A6753;     /* Olive green for highlights */
   
   /* AI accents */
-  --accent-glow: #FF66C4;     /* Neon Pink */
-  --accent-gold: #00F2FE;     /* Neon Cyan */
-  --glow-color: rgba(255, 102, 196, 0.08);
+  --accent-glow: #5A6753;
+  --accent-gold: #C5A03A;
+  --glow-color: rgba(90, 103, 83, 0.08);
 }
 
 * {
@@ -35,7 +34,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   height: 100%;
-  background-color: #0d031c;
+  background-color: var(--bg-linen);
   color: var(--text-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -58,12 +57,12 @@ button {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0d031c;
+  background: var(--bg-cream);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 102, 196, 0.15);
+  background: var(--olive-green);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-card);
+  background: var(--olive-dark);
 }

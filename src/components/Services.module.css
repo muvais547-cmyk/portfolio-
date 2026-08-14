@@ -25,13 +25,13 @@
 .bgLeft {
   width: 50%;
   height: 100%;
-  background-color: transparent;
+  background-color: var(--olive-green);
 }
 
 .bgRight {
   width: 50%;
   height: 100%;
-  background-color: transparent;
+  background-color: var(--bg-linen);
 }
 
 /* Container */
