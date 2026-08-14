@@ -81,7 +81,7 @@ export default function Contact() {
 
             {/* Instagram Link */}
             <a 
-              href="https://instagram.com/muhammed_uvais_a" 
+              href="https://www.instagram.com/aiwithuvaiiis/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className={styles.contactCard}
@@ -98,7 +98,7 @@ export default function Contact() {
               </div>
               <div className={styles.cardBody}>
                 <span className={styles.methodLabel}>Instagram DM</span>
-                <h3 className={styles.methodValue}>@muhammed_uvais_a</h3>
+                <h3 className={styles.methodValue}>@aiwithuvaiiis</h3>
               </div>
             </a>
           </div>

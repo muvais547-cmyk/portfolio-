@@ -104,7 +104,7 @@ export default function Hero() {
 
               {/* Instagram Badge */}
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/aiwithuvaiiis/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={styles.badgePill}
