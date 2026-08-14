@@ -26,16 +26,20 @@
   width: 50%;
   height: 100%;
   background-color: var(--bg-linen);
-  background-image: linear-gradient(rgba(90, 103, 83, 0.05) 1px, transparent 1px);
-  background-size: 100% 24px;
+  background-image: 
+    linear-gradient(rgba(90, 103, 83, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(90, 103, 83, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 .bgRight {
   width: 50%;
   height: 100%;
   background-color: var(--olive-green);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-  background-size: 100% 24px;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 /* Container */
