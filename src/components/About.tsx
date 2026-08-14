@@ -12,18 +12,6 @@ const stats = [
   { id: "[04]", value: 1, suffix: "+", label: "Years Learning AI" },
 ];
 
-const skills = [
-  "AI Video Creation",
-  "AI Content Creation",
-  "Videography",
-  "Prompt Engineering",
-  "Content Strategy",
-  "Social Media Marketing",
-  "Personal Branding",
-  "Creative Direction",
-  "Brand Storytelling",
-  "Short-form Video Creation",
-];
 
 export default function About() {
   const containerVariants: Variants = {
@@ -75,26 +63,6 @@ export default function About() {
             </p>
           </div>
 
-          <div className={styles.skillsWrapper}>
-            <h3 className={styles.skillsTitle}>Skills Summary</h3>
-            <div className={styles.skillsGrid}>
-              {skills.map((skill, idx) => (
-                <motion.span
-                  key={idx}
-                  whileHover={{ 
-                    scale: 1.05, 
-                    backgroundColor: "var(--olive-green)", 
-                    color: "var(--bg-cream)", 
-                    borderColor: "var(--olive-green)" 
-                  }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className={styles.skillTag}
-                >
-                  {skill}
-                </motion.span>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Right Column: Stat Cards Grid */}
