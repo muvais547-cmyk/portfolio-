@@ -34,6 +34,8 @@
   width: 50%;
   height: 100%;
   background-color: var(--olive-green);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 100% 24px;
 }
 
 /* Container */
