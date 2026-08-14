@@ -1,0 +1,62 @@
+.glowContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #07080a; /* Obsidian Dark base background */
+}
+
+.glowBlob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.blob1 {
+  top: 15%;
+  left: 10%;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, #00f2fe 0%, rgba(0, 242, 254, 0) 70%);
+}
+
+.blob2 {
+  bottom: 10%;
+  right: 5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #9f6dff 0%, rgba(159, 109, 255, 0) 70%);
+}
+
+.blob3 {
+  top: 45%;
+  left: 55%;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #ff007f 0%, rgba(255, 0, 127, 0) 70%);
+}
+
+@media (max-width: 768px) {
+  .glowBlob {
+    filter: blur(90px);
+    opacity: 0.12;
+  }
+  .blob1 {
+    width: 280px;
+    height: 280px;
+  }
+  .blob2 {
+    width: 320px;
+    height: 320px;
+  }
+  .blob3 {
+    width: 220px;
+    height: 220px;
+  }
+}

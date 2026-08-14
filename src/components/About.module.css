@@ -25,13 +25,13 @@
 .bgLeft {
   width: 50%;
   height: 100%;
-  background-color: var(--bg-linen);
+  background-color: transparent;
 }
 
 .bgRight {
   width: 50%;
   height: 100%;
-  background-color: var(--olive-green);
+  background-color: transparent;
 }
 
 /* Container */
@@ -153,6 +153,8 @@
   text-align: left;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .cardHeader {
