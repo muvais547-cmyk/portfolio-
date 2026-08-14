@@ -11,6 +11,29 @@
   font-family: var(--font-outfit), sans-serif;
 }
 
+/* Editorial Split Background */
+.splitBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+}
+
+.bgLeft {
+  width: 50%;
+  height: 100%;
+  background-color: var(--bg-linen);
+}
+
+.bgRight {
+  width: 50%;
+  height: 100%;
+  background-color: var(--olive-green);
+}
+
 /* Container */
 .container {
   position: relative;
@@ -324,6 +347,13 @@
   .leftCol, .rightCol {
     width: 100%;
     flex: none;
+  }
+  .splitBg {
+    flex-direction: column;
+  }
+  .bgLeft, .bgRight {
+    width: 100%;
+    height: 50%;
   }
   .section {
     padding: 80px 20px 30px 20px;

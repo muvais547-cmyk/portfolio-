@@ -26,6 +26,12 @@ export default function Contact() {
 
   return (
     <section id="contact" className={styles.section}>
+      {/* Editorial Split Background */}
+      <div className={styles.splitBg}>
+        <div className={styles.bgLeft} />
+        <div className={styles.bgRight} />
+      </div>
+
       <div className={styles.container}>
         {/* Left Column: Get In Touch Info */}
         <div className={styles.leftCol}>
