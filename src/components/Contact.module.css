@@ -221,7 +221,7 @@
 
 .submitBtn {
   width: 100%;
-  background-color: var(--accent-card);
+  background: linear-gradient(135deg, #FF66C4 0%, #00F2FE 100%);
   color: #000000;
   padding: 16px 30px;
   border-radius: 50px;
@@ -239,10 +239,10 @@
 }
 
 .submitBtn:hover {
-  background-color: var(--text-dark);
+  background: #ffffff;
   color: #000000;
   transform: translateY(-1.5px);
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(255, 102, 196, 0.4);
 }
 
 /* Success State styling */

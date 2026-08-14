@@ -286,9 +286,9 @@
 
 .barFill {
   height: 100%;
-  background-color: #ffffff;
+  background: linear-gradient(90deg, #FF66C4 0%, #00F2FE 100%);
   border-radius: 2px;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
 }
 
 /* Responsiveness */

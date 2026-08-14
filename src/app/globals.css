@@ -1,23 +1,27 @@
 :root {
-  --bg-cream: #07080a;
-  --bg-linen: #07080a;
-  --bg-card: rgba(255, 255, 255, 0.03);   /* Translucent Frosted Glass Card Cover */
-  --border-card: rgba(255, 255, 255, 0.06);
-  --text-dark: #FFFFFF;       /* Pure white headings */
-  --text-muted: #8E95A5;      /* Tech silver description text */
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-dark: rgba(255, 255, 255, 0.15);
+  --bg-cream: #120524;        /* Deep midnight violet */
+  --bg-linen: #0d031c;        /* Pitch black indigo */
+  --bg-card: rgba(35, 12, 60, 0.45);   /* Frosted translucent deep violet card background */
+  --border-card: rgba(255, 102, 196, 0.15); /* Neon pink tinted card border */
+  
+  --olive-green: #3b145a;     /* Replaced olive green with a rich deep purple */
+  --olive-dark: #23083b;      /* Replaced olive dark with dark plum */
+  
+  --text-dark: #FFFFFF;       /* Heading white */
+  --text-muted: #D5CADF;      /* Muted lavender silver */
+  --border-color: rgba(255, 102, 196, 0.12);
+  --border-dark: rgba(255, 102, 196, 0.25);
 
   /* Modern AI Model card variables */
   --text-card-title: #FFFFFF;
-  --text-card-desc: #8E95A5;
-  --accent-card: #00f2fe;     /* Cyber Cyan glow */
-  --accent-purple: #9f6dff;   /* Cyber Purple glow */
+  --text-card-desc: #CBB9D8;
+  --accent-card: #FF66C4;     /* Neon Pink accent */
+  --accent-cyan: #00F2FE;     /* Neon Cyan accent */
   
   /* AI accents */
-  --accent-glow: #00f2fe;
-  --accent-gold: #ff007f;
-  --glow-color: rgba(0, 242, 254, 0.08);
+  --accent-glow: #FF66C4;     /* Neon Pink */
+  --accent-gold: #00F2FE;     /* Neon Cyan */
+  --glow-color: rgba(255, 102, 196, 0.08);
 }
 
 * {
@@ -31,7 +35,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   height: 100%;
-  background-color: #07080a;
+  background-color: #0d031c;
   color: var(--text-dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,10 +58,10 @@ button {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #07080a;
+  background: #0d031c;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 102, 196, 0.15);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
