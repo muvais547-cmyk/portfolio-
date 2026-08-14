@@ -83,9 +83,9 @@ export default function About() {
                   key={idx}
                   whileHover={{ 
                     scale: 1.05, 
-                    backgroundColor: "var(--olive-green)", 
-                    color: "var(--bg-cream)", 
-                    borderColor: "var(--olive-green)" 
+                    backgroundColor: "var(--accent-glow)", 
+                    color: "#000000", 
+                    borderColor: "var(--accent-glow)" 
                   }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                   className={styles.skillTag}

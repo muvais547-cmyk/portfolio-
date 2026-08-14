@@ -116,8 +116,8 @@
 }
 
 .serviceCard {
-  background-color: #f6f5f2; /* Card off-white cover */
-  border: 1px solid rgba(0, 0, 0, 0.08);
+  background-color: var(--bg-cream);
+  border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 22px;
   display: flex;
@@ -126,7 +126,7 @@
   text-align: left;
   min-height: 220px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .cardTop {
@@ -147,7 +147,7 @@
 .cardMeta {
   font-size: 0.62rem;
   font-weight: 700;
-  color: var(--olive-green);
+  color: var(--accent-glow);
   font-family: monospace;
   letter-spacing: 0.02em;
 }
@@ -159,7 +159,7 @@
 }
 
 .iconWrapper {
-  color: var(--olive-green);
+  color: var(--accent-glow);
   margin-bottom: 4px;
 }
 

@@ -1,12 +1,17 @@
 :root {
-  --bg-cream: #FAF9F6;
-  --bg-linen: #EBEAE5;
-  --olive-green: #5A6753;
-  --olive-dark: #475241;
-  --text-dark: #1C1E1B;
-  --text-muted: #6B7567;
-  --border-color: rgba(90, 103, 83, 0.2);
-  --border-dark: rgba(90, 103, 83, 0.4);
+  --bg-cream: #141619;       /* Dark graphite card cover */
+  --bg-linen: #090A0C;       /* Obsidian pitch black background */
+  --olive-green: #182C21;    /* Deep cyber forest/emerald green */
+  --olive-dark: #0F1E15;     /* Darker tech green */
+  --text-dark: #F3F4F6;      /* Main text off-white */
+  --text-muted: #8F9A90;     /* Muted tech silver/sage */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-dark: rgba(255, 255, 255, 0.16);
+  
+  /* AI Glow accents */
+  --accent-glow: #9FE88D;    /* Neon lime/mint green */
+  --accent-gold: #E2C05E;    /* Cyber metallic gold */
+  --glow-color: rgba(159, 232, 141, 0.12);
 }
 
 * {
@@ -50,5 +55,5 @@ button {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--olive-dark);
+  background: var(--accent-glow);
 }
