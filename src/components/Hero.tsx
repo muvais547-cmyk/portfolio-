@@ -120,7 +120,7 @@ export default function Hero() {
 
               {/* WhatsApp Badge */}
               <a 
-                href="https://wa.me/" 
+                href="https://wa.me/919249039714" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className={styles.badgePill}

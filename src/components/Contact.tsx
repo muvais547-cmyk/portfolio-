@@ -60,7 +60,7 @@ export default function Contact() {
 
             {/* WhatsApp Link */}
             <a 
-              href="https://wa.me/919061596700" 
+              href="https://wa.me/919249039714" 
               target="_blank" 
               rel="noopener noreferrer" 
               className={styles.contactCard}
@@ -75,7 +75,7 @@ export default function Contact() {
               </div>
               <div className={styles.cardBody}>
                 <span className={styles.methodLabel}>WhatsApp Chat</span>
-                <h3 className={styles.methodValue}>+91 90615 96700</h3>
+                <h3 className={styles.methodValue}>+91 92490 39714</h3>
               </div>
             </a>
 
