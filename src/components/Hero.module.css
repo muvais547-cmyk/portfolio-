@@ -102,7 +102,7 @@
 .followBtn {
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--accent-card);
+  color: var(--olive-dark);
   text-decoration: underline;
   padding: 4px 8px;
   transition: opacity 0.2s;
@@ -222,11 +222,11 @@
 }
 
 .badgePill:hover {
-  background: linear-gradient(135deg, #FF66C4 0%, #00F2FE 100%);
-  border-color: transparent;
-  color: #000000;
+  background-color: var(--olive-green);
+  border-color: var(--olive-green);
+  color: #ffffff;
   transform: translateY(-1.5px);
-  box-shadow: 0 4px 15px rgba(255, 102, 196, 0.3);
+  box-shadow: 0 4px 10px rgba(90, 103, 83, 0.2);
 }
 
 .badgePill:hover svg {
@@ -281,9 +281,7 @@
   font-family: var(--font-syne), sans-serif;
   font-size: 16vw; /* Fluid font sizing */
   font-weight: 800;
-  background: linear-gradient(135deg, #FF66C4 0%, #00F2FE 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--olive-green);
   text-transform: uppercase;
   text-align: center;
   line-height: 0.75;
@@ -292,7 +290,6 @@
   letter-spacing: -0.04em;
   z-index: 1; /* Sits behind image */
   pointer-events: none;
-  text-shadow: 0 0 35px rgba(255, 102, 196, 0.15);
 }
 
 @media (min-width: 820px) {
@@ -305,16 +302,14 @@
   position: relative;
   width: 100%;
   height: 380px;
-  background-color: rgba(35, 12, 60, 0.45);
-  border: 1px solid rgba(255, 102, 196, 0.18);
+  background-color: var(--olive-green);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 30px 50px;
   overflow: hidden; /* Cut off everything outside */
-  border-radius: 20px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  border-radius: 12px;
 }
 
 .frameTextContent {
@@ -329,7 +324,8 @@
 .frameCategoryLabel {
   font-size: 0.7rem;
   font-weight: 600;
-  color: var(--accent-card);
+  opacity: 0.65;
+  color: #ffffff;
   letter-spacing: 0.15em;
   margin-bottom: 6px;
 }
@@ -340,9 +336,7 @@
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.01em;
-  background: linear-gradient(135deg, #ffffff 40%, #ffcbdc 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
   margin-bottom: 12px;
   text-transform: uppercase;
 }
@@ -359,9 +353,8 @@
   width: 320px;
   height: 320px;
   aspect-ratio: 1 / 1;
-  background-color: rgba(18, 5, 33, 0.5);
-  border: 1px solid rgba(255, 102, 196, 0.2);
-  border-radius: 16px;
+  background-color: var(--olive-dark);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   overflow: hidden;
   position: relative;
   z-index: 2;
@@ -473,13 +466,13 @@
 }
 
 .emailInput:focus {
-  border-color: var(--accent-card);
+  border-color: var(--olive-green);
 }
 
 .submitBtn {
   width: 100%;
-  background-color: var(--accent-card);
-  color: #000000;
+  background-color: var(--olive-green);
+  color: #ffffff;
   padding: 15px 30px;
   border-radius: 50px;
   font-size: 1rem;
@@ -492,8 +485,8 @@
 }
 
 .submitBtn:hover {
-  background-color: var(--text-dark);
-  color: #000000;
+  background-color: var(--olive-dark);
+  color: #ffffff;
 }
 
 .successState {
@@ -505,7 +498,7 @@
 }
 
 .checkIcon {
-  color: var(--accent-card);
+  color: var(--olive-green);
   margin-bottom: 15px;
   animation: scaleIn 0.3s ease-out;
 }

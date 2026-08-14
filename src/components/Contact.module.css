@@ -244,8 +244,8 @@
 
 .submitBtn {
   width: 100%;
-  background: linear-gradient(135deg, #FF66C4 0%, #00F2FE 100%);
-  color: #000000;
+  background-color: var(--olive-green);
+  color: #ffffff;
   padding: 16px 30px;
   border-radius: 50px;
   font-size: 0.95rem;
@@ -262,10 +262,10 @@
 }
 
 .submitBtn:hover {
-  background: #ffffff;
-  color: #000000;
+  background-color: var(--olive-dark);
+  color: #ffffff;
   transform: translateY(-1.5px);
-  box-shadow: 0 4px 15px rgba(255, 102, 196, 0.4);
+  box-shadow: 0 4px 15px rgba(90, 103, 83, 0.15);
 }
 
 /* Success State styling */
