@@ -90,7 +90,7 @@
 
 .bioText strong {
   font-weight: 600;
-  color: var(--olive-dark);
+  color: var(--accent-card);
 }
 
 .bioTextMuted {

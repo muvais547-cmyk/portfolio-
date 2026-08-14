@@ -102,7 +102,7 @@
 .followBtn {
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--olive-dark);
+  color: var(--accent-card);
   text-decoration: underline;
   padding: 4px 8px;
   transition: opacity 0.2s;
@@ -123,8 +123,8 @@
   height: 40px;
   border-radius: 50%;
   border: 1px solid var(--border-color);
-  background-color: var(--bg-cream);
-  color: var(--olive-green);
+  background-color: rgba(255, 255, 255, 0.04);
+  color: var(--text-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,7 +132,8 @@
 }
 
 .iconBtn:hover {
-  background-color: var(--bg-linen);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--accent-card);
   border-color: var(--border-dark);
 }
 
@@ -280,7 +281,7 @@
   font-family: var(--font-syne), sans-serif;
   font-size: 16vw; /* Fluid font sizing */
   font-weight: 800;
-  color: var(--olive-green);
+  color: var(--accent-card);
   text-transform: uppercase;
   text-align: center;
   line-height: 0.75;
@@ -289,6 +290,7 @@
   letter-spacing: -0.04em;
   z-index: 1; /* Sits behind image */
   pointer-events: none;
+  text-shadow: 0 0 35px rgba(0, 242, 254, 0.15);
 }
 
 @media (min-width: 820px) {
@@ -313,7 +315,7 @@
 .frameTextContent {
   display: flex;
   flex-direction: column;
-  color: var(--bg-cream);
+  color: #ffffff;
   max-width: 50%;
   z-index: 2;
   text-align: left;
@@ -463,13 +465,13 @@
 }
 
 .emailInput:focus {
-  border-color: var(--olive-green);
+  border-color: var(--accent-card);
 }
 
 .submitBtn {
   width: 100%;
-  background-color: var(--olive-green);
-  color: #ffffff;
+  background-color: var(--accent-card);
+  color: #000000;
   padding: 15px 30px;
   border-radius: 50px;
   font-size: 1rem;
@@ -482,7 +484,8 @@
 }
 
 .submitBtn:hover {
-  background-color: var(--olive-dark);
+  background-color: var(--text-dark);
+  color: #000000;
 }
 
 .successState {
@@ -494,7 +497,7 @@
 }
 
 .checkIcon {
-  color: var(--olive-green);
+  color: var(--accent-card);
   margin-bottom: 15px;
   animation: scaleIn 0.3s ease-out;
 }
