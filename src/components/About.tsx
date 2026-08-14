@@ -84,7 +84,7 @@ export default function About() {
                   whileHover={{ 
                     scale: 1.05, 
                     backgroundColor: "var(--accent-glow)", 
-                    color: "#000000", 
+                    color: "#ffffff", 
                     borderColor: "var(--accent-glow)" 
                   }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}

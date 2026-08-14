@@ -1,17 +1,17 @@
 :root {
-  --bg-cream: #141619;       /* Dark graphite card cover */
-  --bg-linen: #090A0C;       /* Obsidian pitch black background */
-  --olive-green: #182C21;    /* Deep cyber forest/emerald green */
-  --olive-dark: #0F1E15;     /* Darker tech green */
-  --text-dark: #F3F4F6;      /* Main text off-white */
-  --text-muted: #8F9A90;     /* Muted tech silver/sage */
-  --border-color: rgba(255, 255, 255, 0.08);
-  --border-dark: rgba(255, 255, 255, 0.16);
+  --bg-cream: #FFFFFF;       /* Pure white card cover */
+  --bg-linen: #FAF9F6;       /* Light off-white linen background */
+  --olive-green: #B2C3B0;    /* Lighter editorial sage green */
+  --olive-dark: #3F4F3D;     /* Text-contrast sage green */
+  --text-dark: #19201A;      /* Dark slate text */
+  --text-muted: #627265;     /* Muted sage */
+  --border-color: rgba(25, 32, 26, 0.1);
+  --border-dark: rgba(25, 32, 26, 0.2);
   
-  /* AI Glow accents */
-  --accent-glow: #9FE88D;    /* Neon lime/mint green */
-  --accent-gold: #E2C05E;    /* Cyber metallic gold */
-  --glow-color: rgba(159, 232, 141, 0.12);
+  /* AI Glow accents for light theme */
+  --accent-glow: #2E7D52;    /* Vibrant tech mint green */
+  --accent-gold: #C5A03A;    /* Cyber gold */
+  --glow-color: rgba(46, 125, 82, 0.08);
 }
 
 * {
@@ -48,7 +48,7 @@ button {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-cream);
+  background: var(--bg-linen);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--olive-green);

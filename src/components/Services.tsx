@@ -9,58 +9,44 @@ const servicesList = [
   {
     num: "01",
     icon: <Film size={22} />,
-    meta: "[ MODEL: VEO / RUNWAY ]",
-    title: "AI Video Ads",
-    desc: "Create cinematic AI-powered advertisements for brands and products."
+    meta: "[ VEO / RUNWAY / KLING ]",
+    title: "AI Video Creation",
+    desc: "Professional cinematic AI videos."
   },
   {
     num: "02",
     icon: <Box size={22} />,
-    meta: "[ ENGINE: FLUX / MJ ]",
-    title: "AI Product Ads",
-    desc: "Create premium product visuals and advertisements using AI."
+    meta: "[ FLUX / MIDJOURNEY ]",
+    title: "AI Advertisements",
+    desc: "Luxury AI advertisements for products and brands."
   },
   {
     num: "03",
-    icon: <Tv size={22} />,
-    meta: "[ CINEMATIC_V2.0 ]",
-    title: "Brand Videos",
-    desc: "Create cinematic promotional videos that communicate a brand's identity and story."
+    icon: <Share2 size={22} />,
+    meta: "[ REELS / CAMPAIGNS ]",
+    title: "Social Media Marketing",
+    desc: "Growth-focused social media strategies."
   },
   {
     num: "04",
-    icon: <Share2 size={22} />,
-    meta: "[ REELS / SHORTS SYNC ]",
-    title: "Social Media Content",
-    desc: "Create engaging reels, promotional posts and creative content for social media."
+    icon: <Sparkles size={22} />,
+    meta: "[ CHATGPT / GEMINI ]",
+    title: "AI Content Creation",
+    desc: "Images, videos, scripts, and creative assets."
   },
   {
     num: "05",
-    icon: <Sparkles size={22} />,
-    meta: "[ MIDJOURNEY / LEONARDO ]",
-    title: "AI Image Generation",
-    desc: "Create high-quality AI-generated images for products, brands and campaigns."
+    icon: <Cpu size={22} />,
+    meta: "[ EXPERT SYSTEM PROMPTS ]",
+    title: "Prompt Engineering",
+    desc: "Professional prompts for ChatGPT, Veo, Midjourney, Flux, Kling, Gemini, Runway, Nano Banana, and other AI tools."
   },
   {
     num: "06",
-    icon: <User size={22} />,
-    meta: "[ IDENTITY_AI_SYNC ]",
-    title: "Personal Branding",
-    desc: "Create professional AI-powered content for creators, professionals and business owners."
-  },
-  {
-    num: "07",
-    icon: <Cpu size={22} />,
-    meta: "[ PROMPT: GPT-4o / GEMINI ]",
-    title: "Creative Concept & Prompt Engineering",
-    desc: "Develop creative concepts, scripts and detailed AI prompts for image and video generation."
-  },
-  {
-    num: "08",
     icon: <LineChart size={22} />,
-    meta: "[ NEURAL_CAMPAIGN_STRAT ]",
-    title: "AI Content Strategy",
-    desc: "Help brands plan and create effective AI-powered content campaigns."
+    meta: "[ ARCHITECTURE / AUDIENCE ]",
+    title: "Content Strategy",
+    desc: "Complete content planning and campaign strategy."
   }
 ];
 
