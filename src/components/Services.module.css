@@ -1,0 +1,232 @@
+.servicesSection {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px;
+  overflow: hidden;
+  font-family: var(--font-outfit), sans-serif;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Split Background - Inverted from About (Left is Green, Right is Linen) */
+.splitBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+}
+
+.bgLeft {
+  width: 50%;
+  height: 100%;
+  background-color: var(--olive-green);
+}
+
+.bgRight {
+  width: 50%;
+  height: 100%;
+  background-color: var(--bg-linen);
+}
+
+/* Container */
+.container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* Left Column: Sticky Title Description */
+.leftCol {
+  flex: 0.85;
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.stickyIntro {
+  color: var(--bg-cream);
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.introText {
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+}
+
+.ctaWrapper {
+  margin-top: 10px;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.ctaLink:hover {
+  opacity: 0.8;
+}
+
+/* Right Column: Cards Grid */
+.rightCol {
+  flex: 1.15;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+}
+
+.serviceCard {
+  background-color: #f6f5f2; /* Card off-white cover */
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  min-height: 220px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.cardTop {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.cardNum {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+.cardMeta {
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: var(--olive-green);
+  font-family: monospace;
+  letter-spacing: 0.02em;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.iconWrapper {
+  color: var(--olive-green);
+  margin-bottom: 4px;
+}
+
+.cardTitle {
+  font-family: var(--font-syne), sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.cardDesc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+/* Responsiveness */
+@media (max-width: 960px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 10px;
+  }
+  .leftCol, .rightCol {
+    width: 100%;
+    flex: none;
+  }
+  .leftCol {
+    position: relative;
+    top: 0;
+  }
+  .splitBg {
+    flex-direction: column;
+  }
+  .bgLeft, .bgRight {
+    width: 100%;
+    height: 50%;
+  }
+  .servicesSection {
+    padding: 80px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rightCol {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .introText {
+    font-size: 1rem;
+  }
+  .serviceCard {
+    padding: 18px;
+    min-height: 180px;
+  }
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+  .cardDesc {
+    font-size: 0.76rem;
+  }
+}
