@@ -140,14 +140,14 @@
 .cardNum {
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--text-muted);
+  color: var(--text-card-desc);
   font-family: monospace;
 }
 
 .cardMeta {
   font-size: 0.62rem;
   font-weight: 700;
-  color: var(--olive-green);
+  color: var(--accent-card);
   font-family: monospace;
   letter-spacing: 0.02em;
 }
@@ -159,7 +159,7 @@
 }
 
 .iconWrapper {
-  color: var(--olive-green);
+  color: var(--accent-card);
   margin-bottom: 4px;
 }
 
@@ -167,14 +167,14 @@
   font-family: var(--font-syne), sans-serif;
   font-size: 1.15rem;
   font-weight: 800;
-  color: var(--text-dark);
+  color: var(--text-card-title);
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
 
 .cardDesc {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--text-card-desc);
   line-height: 1.45;
   font-weight: 400;
 }

@@ -139,13 +139,13 @@
   height: 12px;
   border-radius: 50%;
   background-color: var(--bg-card);
-  border: 2px solid var(--olive-green);
+  border: 2px solid var(--accent-card);
   z-index: 2;
   transition: background-color 0.2s;
 }
 
 .timelineItem:hover .timelineNode {
-  background-color: var(--olive-green);
+  background-color: var(--accent-card);
 }
 
 .timelineCard {
@@ -172,7 +172,7 @@
 .cardYear {
   font-size: 0.72rem;
   font-weight: 700;
-  color: var(--olive-dark);
+  color: var(--accent-card);
   font-family: monospace;
 }
 
@@ -180,7 +180,7 @@
   font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--text-card-desc);
   letter-spacing: 0.05em;
 }
 
@@ -188,7 +188,7 @@
   font-family: var(--font-syne), sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
-  color: var(--text-dark);
+  color: var(--text-card-title);
   letter-spacing: -0.01em;
   margin-bottom: 6px;
   text-transform: uppercase;
@@ -196,7 +196,7 @@
 
 .cardDesc {
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: var(--text-card-desc);
   line-height: 1.45;
   font-weight: 400;
 }
